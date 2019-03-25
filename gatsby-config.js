@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Matt D Webb',
     description: '2000 Days to MD',
-    siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+    siteUrl: 'https://amazing-lalande-63b9df.netlify.com', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://amazing-lalande-63b9df.netlify.com',
       },
     },
     'gatsby-plugin-emotion',

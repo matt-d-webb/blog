@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Matt D Webb',
-    description: '2000 Days to MD',
-    siteUrl: 'https://amazing-lalande-63b9df.netlify.com', // full path to blog - no ending slash
+    description: '2000 Days',
+    siteUrl: 'https://webb.media', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://amazing-lalande-63b9df.netlify.com',
+        siteUrl: 'https://webb.media',
       },
     },
     'gatsby-plugin-emotion',

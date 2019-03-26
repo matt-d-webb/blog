@@ -36,6 +36,7 @@ const About: React.FunctionComponent = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
+              <p>Testing content layout and structure. Will come back to this!</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo finibus leo,
                 non tempus magna vehicula ac. Maecenas mollis ante finibus pharetra imperdiet.

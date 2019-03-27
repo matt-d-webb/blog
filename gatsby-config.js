@@ -96,6 +96,7 @@ module.exports = {
       postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
     },
   },
+  'gatsby-plugin-netlify-cms',
   {
     resolve: `gatsby-plugin-google-analytics`,
     options: {

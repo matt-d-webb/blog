@@ -133,6 +133,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
           </div>
           <script defer>
             {
+              typeof window !== 'undefined' ?
               (window as any).OneSignal ? (window as any).OneSignal.push(function () {
                 console.log('available');
                 (window as any).OneSignal.init({
@@ -141,7 +142,7 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
                     enable: true,
                   },
                 })
-              }) : console.log('not available')
+              }) : console.log('not available') : null
             }
           </script>
         </header>

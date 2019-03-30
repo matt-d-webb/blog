@@ -31,36 +31,36 @@ class Firebase {
   // *** Auth API ***
 
   doCreateUserWithEmailAndPassword = (email: any, password: any) =>
-  (this as any).auth.createUserWithEmailAndPassword(email, password);
+    (this as any).auth.createUserWithEmailAndPassword(email, password);
 
   doSignInWithEmailAndPassword = (email: any, password: any) =>
-  (this as any).auth.signInWithEmailAndPassword(email, password);
+    (this as any).auth.signInWithEmailAndPassword(email, password);
 
   doSignInWithGoogle = () =>
-  (this as any).auth.signInWithPopup((this as any).googleProvider);
+    (this as any).auth.signInWithPopup((this as any).googleProvider);
 
   doSignInWithFacebook = () =>
-  (this as any).auth.signInWithPopup((this as any).facebookProvider);
+    (this as any).auth.signInWithPopup((this as any).facebookProvider);
 
   doSignInWithTwitter = () =>
-  (this as any).auth.signInWithPopup((this as any).twitterProvider);
+    (this as any).auth.signInWithPopup((this as any).twitterProvider);
 
   doSignOut = () => (this as any).auth.signOut();
 
   doPasswordReset = (email: any) => (this as any).auth.sendPasswordResetEmail(email);
 
   doSendEmailVerification = () =>
-  (this as any).auth.currentUser.sendEmailVerification({
+    (this as any).auth.currentUser.sendEmailVerification({
       url: process.env.GATSBY_CONFIRMATION_EMAIL_REDIRECT,
     });
 
   doPasswordUpdate = (password: any) =>
-  (this as any).auth.currentUser.updatePassword(password);
+    (this as any).auth.currentUser.updatePassword(password);
 
   // *** Merge Auth and DB User API *** //
 
   onAuthUserListener = (next: any, fallback: any) =>
-  (this as any).auth.onAuthStateChanged((authUser: any) => {
+    (this as any).auth.onAuthStateChanged((authUser: any) => {
       if (authUser) {
         this.user(authUser.uid)
           .once('value')

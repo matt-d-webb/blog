@@ -3,4 +3,4 @@ import getFirebase from './firebase';
 
 export default getFirebase;
 
-export { FirebaseContext, withFirebase };
+export { FirebaseContext, withFirebase, getFirebase };

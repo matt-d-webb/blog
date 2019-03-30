@@ -1,23 +1,35 @@
 import React, { Component } from 'react';
 const withFirebase = require('../firebase').withFirebase;
-
+import { getFirebase } from '../firebase';
 
 
 class SignInFacebookBase extends Component {
   constructor(props : any) {
     super(props);
-
     this.state = { error: null };
+  }
+
+  componentDidMount() {
+    const app = import('firebase/app');
+    const auth = import('firebase/auth');
+    const database = import('firebase/database');
+
+    Promise.all([app, auth, database]).then(values => {
+      console.log('COMPLETE!');
+      const firebase = getFirebase(values[0]);
+
+      this.setState({ firebase });
+    });
   }
 
   onSubmit = (event: any) => {
     event.preventDefault();
-    console.log((this.props as any).firebase);
-    (this.props as any).firebase
+
+    (this.state as any).firebase
       .doSignInWithFacebook()
       .then((socialAuthUser: any) => {
         // Create a user in your Firebase Realtime Database too
-        return (this.props as any).firebase.user(socialAuthUser.user.uid).set({
+        return (this.state as any).firebase.user(socialAuthUser.user.uid).set({
           username: socialAuthUser.additionalUserInfo.profile.name,
           email: socialAuthUser.additionalUserInfo.profile.email,
           roles: [],

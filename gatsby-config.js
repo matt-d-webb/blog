@@ -22,6 +22,8 @@ module.exports = {
       display: `standalone`,
       icon: `src/content/avatars/matt.png`, // This path is relative to the root of the site.
       include_favicon: true, // Include favicon
+      gcm_sender_id: "482941778795",
+      gcm_sender_id_comment: "Do not change the GCM Sender ID"
     }
   },
   `gatsby-plugin-offline`,

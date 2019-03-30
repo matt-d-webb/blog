@@ -10,11 +10,11 @@ collections:
     label: "Blog"
     folder: "src/content"
     create: true
+    author: {{author}}
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown, required: false  }
-      - { name: author, lable: Author, default: Webb, widget: text, require: true }
       - { name: image, label: Image, widget: image, required: false }
       - { name: date, label: Date, widget: date }
       - { name: tag, label: Tag, widget: text, required: false  }

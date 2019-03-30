@@ -12,6 +12,8 @@ export interface WebsiteConfig {
    * blog full path, no ending slash!
    */
   siteUrl: string;
+  mailchimpAction?: string;
+  mailchimpName?: string;
 }
 
 const config: WebsiteConfig = {

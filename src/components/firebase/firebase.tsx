@@ -23,27 +23,13 @@ class Firebase {
 
     /* Social Sign In Method Provider */
 
-    (this as any).googleProvider = new app.auth.GoogleAuthProvider();
     (this as any).facebookProvider = new app.auth.FacebookAuthProvider();
-    (this as any).twitterProvider = new app.auth.TwitterAuthProvider();
   }
 
   // *** Auth API ***
 
-  doCreateUserWithEmailAndPassword = (email: any, password: any) =>
-    (this as any).auth.createUserWithEmailAndPassword(email, password);
-
-  doSignInWithEmailAndPassword = (email: any, password: any) =>
-    (this as any).auth.signInWithEmailAndPassword(email, password);
-
-  doSignInWithGoogle = () =>
-    (this as any).auth.signInWithPopup((this as any).googleProvider);
-
   doSignInWithFacebook = () =>
     (this as any).auth.signInWithPopup((this as any).facebookProvider);
-
-  doSignInWithTwitter = () =>
-    (this as any).auth.signInWithPopup((this as any).twitterProvider);
 
   doSignOut = () => (this as any).auth.signOut();
 

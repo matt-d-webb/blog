@@ -6,4 +6,4 @@ tag: test
 ---
 This is a test
 
-![matt](/uploads/fullsizeoutput_1786.jpeg)
+[matt](/uploads/fullsizeoutput_1786.jpeg)

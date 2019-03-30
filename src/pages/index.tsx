@@ -104,8 +104,6 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
         />
         <meta property="og:image:width" content={width} />
         <meta property="og:image:height" content={height} />
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
-
       </Helmet>
       <Wrapper>
         <header
@@ -131,24 +129,8 @@ const IndexPage: React.FunctionComponent<IndexProps> = props => {
             </SiteHeaderContent>
             <SiteNav isHome />
           </div>
-          <script defer>
-            {
-              typeof window !== 'undefined' ?
-              (window as any).OneSignal ? (window as any).OneSignal.push(function () {
-                console.log('available');
-                (window as any).OneSignal.init({
-                  appId: "a5ebf1af-0b45-4bdc-8486-5dca5a1f0b24",
-                  notifyButton: {
-                    enable: true,
-                  },
-                })
-              }) : console.log('not available') : null
-            }
-          </script>
         </header>
         <main id="site-main" css={[SiteMain, outer]}>
-            <h1>TEST</h1>
-        <div className='onesignal-customlink-container'></div>
           <div css={inner}>
             <div css={[PostFeed, PostFeedRaise]}>
               {props.data.allMarkdownRemark.edges.map(post => {
@@ -184,7 +166,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    header: file(relativePath: { eq: "img/blog-cover.jpg" }) {
+    header: file(relativePath: { eq: "img/new-york-cover.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

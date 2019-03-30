@@ -2,16 +2,19 @@ backend:
   name: github
   repo: matt-d-webb/blog
 
-media_folder: static/assets
-public_folder: assets
+media_folder: "static/uploads"
+public_folder: "uploads"
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: "blog"
+    label: "Posts"
+    folder: "content"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: image, label: Image, widget: image }
+      - { name: date, label: Date, widget: date }
+      - { name: tag, label: Tag, widget: text }
+

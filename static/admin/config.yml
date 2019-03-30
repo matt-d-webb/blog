@@ -14,6 +14,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown, required: false  }
+      - { name: author, lable: Author, default: Webb }
       - { name: image, label: Image, widget: image, required: false }
       - { name: date, label: Date, widget: date }
       - { name: tag, label: Tag, widget: text, required: false  }

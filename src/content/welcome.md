@@ -3,7 +3,7 @@ layout: post
 title: "Welcome"
 author: Webb
 tags: ["Welcome"]
-image: img/demo1.jpg
+image: img/new-york-cover.jpg
 date: "2019-03-26T23:46:37.121Z"
 draft: false
 ---

@@ -71,7 +71,7 @@ module.exports = {
               margin: '0',
               'margin-top': '1px',
               position: 'relative',
-              top: '5px',
+              top: '-4px',
               width: '25px'
             }
           }

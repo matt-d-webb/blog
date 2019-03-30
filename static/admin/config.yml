@@ -7,10 +7,10 @@ public_folder: "uploads"
 
 collections:
   - name: "blog"
-    label: "Posts"
-    folder: "content"
+    label: "Blog"
+    folder: "src/content"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }

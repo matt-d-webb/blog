@@ -53,20 +53,23 @@ const About: React.FunctionComponent = () => (
                 weekends beyond work and drink coffee!
               </p>
               <div style={boardsContainer}>
-                <Stockfish>
-                  {({ position, onDrop }) => (
-                    <Chessboard
-                      id="stockfish"
-                      position={position}
-                      width={320}
-                      onDrop={onDrop}
-                      boardStyle={boardStyle}
-                      orientation="black"
-                    />
-                  )}
-                </Stockfish>
+                {typeof window !== 'undefined' ?
+                  <Stockfish>
+                    {({ position, onDrop }: any) => (
+                      <Chessboard
+                        id="stockfish"
+                        position={position}
+                        width={320}
+                        onDrop={onDrop}
+                        boardStyle={boardStyle}
+                        orientation="black"
+                      />
+                    )}
+                  </Stockfish> : null
+                }
+
               </div>
-              
+
             </div>
           </PostFullContent>
         </article>

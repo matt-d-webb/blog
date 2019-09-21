@@ -169,11 +169,25 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   // adds sourcemaps for tsx in dev mode
   if (stage === `develop` || stage === `develop-html`) {
     actions.setWebpackConfig({
       devtool: 'eval-source-map',
     });
   }
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /chessboard/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+
+
 };

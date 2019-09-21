@@ -2,7 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Chess from 'chess.js'; // import Chess from  "chess.js"(default) if recieving an error about new Chess not being a constructor
 
-const STOCKFISH = (window as any).STOCKFISH;
+const windowGlobal = typeof window !== 'undefined' && window
+const STOCKFISH = (windowGlobal as any).STOCKFISH;
 const game = new Chess();
 
 interface Test {

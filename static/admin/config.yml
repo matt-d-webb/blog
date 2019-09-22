@@ -10,7 +10,7 @@ collections:
     label: "Blog"
     folder: "src/content"
     create: true
-    author: {{author}}
+    author: Webb
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: title, label: Title }
@@ -18,4 +18,4 @@ collections:
       - { name: image, label: Image, widget: image, required: false }
       - { name: date, label: Date, widget: date }
       - { name: tag, label: Tag, widget: text, required: false  }
-
+      - { name: 'author', label: Author, widget: text, required: true }

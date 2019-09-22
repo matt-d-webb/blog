@@ -4,9 +4,9 @@ import Chess from 'chess.js'; // import Chess from  "chess.js"(default) if recie
 
 const windowGlobal = typeof window !== 'undefined' && window
 const STOCKFISH = (windowGlobal as any).STOCKFISH;
-const game = new Chess();
+const game: any = (new Chess() as any);
 
-interface Test {
+interface Square {
     sourceSquare: any,
     targetSquare: any
 }
@@ -24,7 +24,7 @@ class Stockfish extends React.Component {
 
 
 
-  onDrop = ({ sourceSquare, targetSquare }: Test) => {
+  onDrop = ({ sourceSquare, targetSquare }: Square) => {
     // see if the move is legal
     const move = game.move({
       from: sourceSquare,

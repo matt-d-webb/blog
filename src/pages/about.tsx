@@ -47,10 +47,10 @@ const About: React.FunctionComponent = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
-              <p>Hello, my name is Matthew Webb. Call me Matt.</p>
+              <p>:wave: Hello, my name is Matthew Webb. Call me Matt.</p>
               <p>
                 I am writing this blog for no other reason than, I have very little better to do with my
-                weekends beyond work and drink coffee!
+                weekends beyond work and drink coffee! :coffee:
               </p>
               <p>
                 Try playing my favourite game, Chess:

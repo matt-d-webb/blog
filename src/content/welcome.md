@@ -8,7 +8,7 @@ date: "2019-03-26T23:46:37.121Z"
 draft: false
 ---
 
-:wave: Hello, welcome to my blog! This is my first post which is hopefully the beginning of some regularly contributions. 
+:wave: Hello, welcome to my blog! This is my first post which is hopefully the beginning of some regular contributions. 
 
 I decided to combine a number of different things I am doing and write about them all here on this blog.
 
@@ -20,7 +20,7 @@ The first thing to note, my blog is written and maintained solely by me. The cod
 git clone https://github.com/matt-d-webb/blog --depth=1 && rm -rf .git
 ```
 
-The site is built with Gatsby, a front end static site generation tool. It uses a Ghost blog theme and is deployed via Netlify. I have also custom integrated Firebase and One Signal for backend services. Including some AWS Lambda functions via the Netlify functions API.
+The site is built with Gatsby, a front end static site generation tool. It uses a Ghost blog theme and is deployed via Netlify. I have also custom integrated Firebase for backend services such as Social Auth. This includes some AWS Lambda functions via the Netlify functions API along with an EB AWS API instance.
 
 The plan with the blog is to cover a number of topics, the main ones are:
 

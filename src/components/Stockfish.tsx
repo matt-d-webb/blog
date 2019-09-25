@@ -4,7 +4,7 @@ import Chess from 'chess.js'; // import Chess from  "chess.js"(default) if recie
 
 const windowGlobal = typeof window !== 'undefined' && window
 const STOCKFISH = (windowGlobal as any).STOCKFISH;
-const game: any = (new Chess() as any);
+const game  = new Chess();
 
 interface Square {
     sourceSquare: any,

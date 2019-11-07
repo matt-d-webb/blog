@@ -48,3 +48,74 @@ var $b=[ku,Qc,Gk,Kk,Bk,Pk,Uk,Zi,Yk,lj,Mj,Nj,Ml,Rl,up,zp,fq,hq,kq,Sp,Xp,Zp,aq,zs,
 
 
 
+
+blah blah bah – Convergence Milestones – 2019
+
+Below describes the milestone deliverables between now and year-end. These have been broken into two weekly sprints with highlighted tasks within. The over arching goal is to provide phrased testable feature delivery to our credit stakeholders, particularly from a technical perspective.
+
+It is important to note that specific dependencies, namely individuals, and their required availability to support these milestones.
+
+November 
+•	Sprint 94 – Oct 28th – Nov 8th 
+Objective:
+Provide a bleeding edge test environment with the latest UI and Core platform to technical stakeholders; this will be within the UAT space on JPMM.
+
+o	Deliver new blah blah bah UI into isolated UAT test environment
+Dependencies: 
+•	DevOps – Wes / John
+•	New UI - Fraser
+o	Expose Container API preload features, including interop
+Dependencies: 
+•	Interop - Malcolm
+o	Make Spread Dashboard Available from new UI
+Dependencies: 
+•	N/A
+o	Integration with latest persistence service
+Dependencies: 
+•	Persistence Service – Malcolm / Andy
+
+•	Sprint 95 – Nov 11th – Nov 22nd 
+Objective:
+Provide critical platform layout features and APIs, this should include demos to our stakeholders on how to adopt these features.
+ 
+o	Upgrade Core to use latest v14 OpenFin Runtime
+Dependencies: 
+•	Runtime – OpenFin (Tom)
+
+o	Enable layouts (snapping / grouping / tabbing)
+Dependencies: 
+•	Layouts – OpenFin (Tom)
+ 
+December
+•	Sprint 96 – Nov 25th – Dec 6th
+Objective:
+Provide enhanced capabilities for applications to run within the new core platform, such features that are not specifically available or supported in JPM Desktop
+
+o	Multi-Instance Support
+Dependencies: 
+•	N/A
+o	Multi-Machine Support
+Dependencies:
+•	Native Components – Giles
+o	Regional Overrides 
+Dependencies:
+•	Persistence Service – Andy
+
+•	Sprint 97 – Dec 9th – Dec 20th
+Objective:
+Finalise MVP feature set to enable beta testing to be carried out in advance of a scheduled production release
+
+o	Tear-out Support 
+Dependencies: 
+•	N/A
+o	Sharable Layouts / Workspaces
+Dependencies: 
+•	Persistence Service – Andy
+
+Keys things out of scope:
+•	Flex Container Support
+•	Full Application Catalogue
+•	 Application Process Pool
+
+
+

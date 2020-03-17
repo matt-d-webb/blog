@@ -40,9 +40,6 @@ const About: React.FunctionComponent = () => (
                 I am writing this blog for no other reason than, I have very little better to do with my
                 weekends beyond work and drink coffee! :coffee:
               </p>
-              <p>
-                Try playing my favourite game, Chess:
-              </p>
             </div>
           </PostFullContent>
         </article>

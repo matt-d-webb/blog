@@ -18,7 +18,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'M.D.Webb',
-  description: 'Stuff',
+  description: '600 Days',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/ghost-matt.png',
   lang: 'en',

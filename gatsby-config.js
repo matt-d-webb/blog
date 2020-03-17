@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Matt D Webb',
-    description: 'Stuff',
+    description: '600 Days',
     siteUrl: 'https://webb.media', // full path to blog - no ending slash
   },
   mapping: {
